@@ -1,16 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <link href="app/style/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="script.js"></script>
-    <title></title>
-</head>
+<HTML>
+<head></head>
 <body>
-<h1>MD2 leerlingen app</h1>
-<h3>Random leerling: <i>(shuffle)</i></h3>
-<section id="person-info"></section>
-<hr>
-<hr>
+
+<div id="btn1">testknop 1</div>
+<div id="btn2">testknop 2</div>
+<div id="shuffle">shuffle</div>
+
+<div class="container"></div>
+<div>test</div>
+
+<script id="students-template" type="text/x-handlebars-template">
+
+
+    <p data-id="{{id}}">{{firstname}}</p>
+
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<script src="thisExamples.js"></script>
+<script src="util/EventDispatcher.js"></script>
+<script src="util/HttpRequest.js"></script>
+<script src="app/models/StudentsModel.js"></script>
+<script src="app/views/RandomStudentView.js"></script>
+<script src="app/app.js"></script>
 </body>
-</html>
+</HTML>
